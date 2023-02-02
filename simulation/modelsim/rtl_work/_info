@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/finalattempt2/simulation/modelsim
+vcafeMachine
+!s110 1671135565
+!i10b 1
+!s100 15mNeQajJA[CbeYBXIiLL3
+IKZQWWnc:Fz8PS^G9e3okD2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1671133066
+8C:/intelFPGA_lite/18.1/finalattempt2/cafeMachine.v
+FC:/intelFPGA_lite/18.1/finalattempt2/cafeMachine.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1671135565.000000
+!s107 C:/intelFPGA_lite/18.1/finalattempt2/cafeMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/finalattempt2|C:/intelFPGA_lite/18.1/finalattempt2/cafeMachine.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/finalattempt2
+Z3 tCvgOpt 0
+ncafe@machine
+vcafeMachine_tb
+!s110 1671135595
+!i10b 1
+!s100 I>3m]TnPW45IRz29K:OaI3
+IWE`9ChKc`YFI6mc>YZT[R1
+R1
+R0
+w1671133406
+8C:/intelFPGA_lite/18.1/finalattempt2/cafeMachine_tb.v
+FC:/intelFPGA_lite/18.1/finalattempt2/cafeMachine_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1671135595.000000
+!s107 C:/intelFPGA_lite/18.1/finalattempt2/cafeMachine_tb.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA_lite/18.1/finalattempt2/cafeMachine_tb.v|
+!i113 1
+o-work work
+R3
+ncafe@machine_tb

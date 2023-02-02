@@ -1,0 +1,290 @@
+module cafeMachine(
+input clk, input rst, input [1:0]in, // 00 = none, 01 = nickel , 10 = dime, 11 = quarter
+output reg out, output reg[4:0] change
+);
+
+parameter s0 = 0;
+parameter s5 = 1;
+parameter s10 = 2;
+parameter s15 =3;
+parameter s20 =4;
+parameter s25 =5;
+parameter s30 =6;
+parameter s35 =7;
+parameter s40 =8;
+parameter s45 =9;
+parameter s50 = 10;
+parameter s55 = 11;
+parameter s60 = 12;
+parameter s65 = 13;
+parameter s70 = 14;
+
+reg[3:0] c_state, n_state;
+
+always@ (posedge clk)
+begin
+if(rst == 1)
+c_state <= 0;
+//n_state = 0;
+//change = 2'b00;
+else
+c_state = n_state;
+end
+
+always@(*)
+case(c_state)
+s0: //state 0 
+if(in == 2’b01)
+begin
+n_state = s5;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s10;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s25;
+out = 0;
+change = 5’d0;
+end
+else
+n_state = s0;
+
+s5: //state 0 
+if(in == 2’b01)
+begin
+n_state = s10;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s15;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s30;
+out = 0;
+change = 5’d0;
+end
+else
+n_state = s0;
+
+s10: //state 0 
+if(in == 2’b01)
+begin
+n_state = s15;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s20;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s35;
+out = 0;
+change = 5’d0;
+end
+else
+n_state = s0;
+
+s15: //state 0 
+if(in == 2’b01)
+begin
+n_state = s20;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s25;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s40;
+out = 0;
+change = 5’d0;
+end
+else
+n_state = s0;
+
+s20: //state 0 
+if(in == 2’b01)
+begin
+n_state = s25;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s35;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s45;
+out = 0;
+change = 5’d0;
+end
+else
+n_state = s0;
+
+s25: //state 0 
+if(in == 2’b01)
+begin
+n_state = s30;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s35;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s50;
+out = 1;
+change = 5’d0;
+end
+else
+n_state = s0;
+
+s30: //state 0 
+if(in == 2’b01)
+begin
+n_state = s35;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s45;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s55;
+out = 1;
+change = 5’d5;
+end
+else
+n_state = s0;
+
+s35: //state 0 
+if(in == 2’b01)
+begin
+n_state = s40;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s45;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s60;
+out = 0;
+change = 5’d10;
+end
+else
+n_state = s0;
+
+s40: //state 0 
+if(in == 2’b01)
+begin
+n_state = s45;
+out = 0;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s50;
+out = 1;
+change = 5’d0;
+end
+else if(in == 2'b11)
+begin
+n_state = s65;
+out = 1;
+change = 5’d15;
+end
+else
+n_state = s0;
+
+
+s45: //state 0 
+if(in == 2’b01)
+begin
+n_state = s50;
+out = 1;
+change = 5’d0;
+end
+else if(in == 2'b10)
+begin
+n_state = s55;
+out = 1;
+change = 5’d5;
+end
+else if(in == 2'b11)
+begin
+n_state = s70;
+out = 0;
+change = 5’d20;
+end
+else
+n_state = s0;
+
+s50:
+begin 
+ns = s0;
+out = 1;
+change = 5d’0;
+end
+
+s55:
+begin 
+ns = s0;
+out = 1;
+change = 5d’5;
+end
+
+s60:
+begin 
+ns = s0;
+out = 1;
+change = 5d’10;
+end
+
+s65:
+begin 
+ns = s0;
+out = 1;
+change = 5d’15;
+end
+
+s70:
+begin 
+ns = s0;
+out = 1;
+change = 5d’20;
+end
