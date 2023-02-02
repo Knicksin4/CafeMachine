@@ -1,0 +1,31 @@
+|cafeMachine
+clk => c_state~1.DATAIN
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+in[0] => Equal0.IN0
+in[0] => Equal1.IN1
+in[0] => Equal2.IN1
+in[1] => Equal0.IN1
+in[1] => Equal1.IN0
+in[1] => Equal2.IN0
+out << out$latch.DB_MAX_OUTPUT_PORT_TYPE
+change[0] << change[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+change[1] << change[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+change[2] << change[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+change[3] << change[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+change[4] << change[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

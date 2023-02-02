@@ -1,0 +1,18 @@
+
+State Machine - |cafeMachine|c_state
+Name c_state.s70 c_state.s65 c_state.s60 c_state.s55 c_state.s50 c_state.s45 c_state.s40 c_state.s35 c_state.s30 c_state.s25 c_state.s20 c_state.s15 c_state.s10 c_state.s5 c_state.0000 
+c_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+c_state.s5 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+c_state.s10 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+c_state.s15 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+c_state.s20 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+c_state.s25 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+c_state.s30 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+c_state.s35 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+c_state.s40 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+c_state.s45 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+c_state.s50 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+c_state.s55 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+c_state.s60 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+c_state.s65 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+c_state.s70 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
